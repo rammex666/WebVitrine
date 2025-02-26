@@ -85,6 +85,10 @@ a {
     margin: 0 1rem;
 }
 
+.services img {
+    border-radius: 15px;
+}
+
 .serviceh1 {
     font-family: "Heavitas";
     font-size: 2rem;
