@@ -111,3 +111,30 @@ footer p{
     margin-right: 1rem;
 }
 
+.datah1{
+    font-family: "Heavitas";
+    font-size: 2rem;
+    color: #e4e4e4;
+    display: flex;
+    justify-content: center;
+    padding-top: 10rem;
+}
+
+.datas{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0rem 0;
+    margin: 0 1rem;
+    text-align: center;
+}
+
+.data{
+    display: flex;
+    align-items: center;
+    font-family: "Heavitas";
+    color: #e4e4e4;
+    font-size: 2rem;
+    width: 100px;
+}
+
