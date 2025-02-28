@@ -27,8 +27,24 @@ function afficherNumber(number, element, message, duration){
     afficherNumber(visits);
 });*/
 
+// Function to fetch data from the API
+async function fetchData(apiUrl) {
+  try {
+    const response = await fetch(apiUrl);
+    if (!response.ok) {
+      throw new Error('Network response was not ok ' + response.statusText);
+    }
+    const data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.error('There has been a problem with your fetch operation:', error);
+  }
+}
 
-afficherNumber(10000, "customers", "Customers", 3);
+// Call the function to fetch data
+fetchData();
+
+afficherNumber(10000, "customers", "Customers", 4);
 afficherNumber(1000, "sold", "Sale", 3000);
 afficherNumber(1000, "ca", "$", 3000);
 
@@ -126,3 +142,4 @@ afficherNumber(1000, "ca", "$", 3000);
         });
     })
 })()
+
